@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "spring-datsaurce.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'spring-datsaurce.driver-class-name'"
+  },
+  {
+    "name": "app.messages.contact-save-succ",
+    "type": "java.lang.String",
+    "description": "A description for 'app.messages.contact-save-succ'"
+  },
+  {
+    "name": "app.messages.contactDeleteSucc",
+    "type": "java.lang.String",
+    "description": "A description for 'app.messages.contactDeleteSucc'"
+  }
+]}

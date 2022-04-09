@@ -44,7 +44,7 @@ public class ContactRestcontroller {
 	}
 
 	@GetMapping(value = "/contact/{cid}")
-	public ContactEntity editContact(@PathVariable("cid") Integer ContactId) {
+	public ContactEntity updateContact(@PathVariable("cid") Integer ContactId) {
 		return contactServiceImpl.getContactById(ContactId);
 
 	}

@@ -17,7 +17,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "CONTACT_DTLS")
-public class ContactEntity {
+public class Contact {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

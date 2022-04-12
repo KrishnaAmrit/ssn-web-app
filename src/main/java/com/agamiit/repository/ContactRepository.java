@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.agamiit.entity.ContactEntity;
+import com.agamiit.entity.Contact;
 
-public interface ContactRepository extends JpaRepository<ContactEntity,Integer> {
-	public List<ContactEntity> findByActivieSW(String sw);
+public interface ContactRepository extends JpaRepository<Contact,Integer> {
+	public List<Contact> findByActivieSW(String sw);
 	
 
 }

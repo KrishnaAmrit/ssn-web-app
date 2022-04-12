@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.agamiit.constrant.AppConstrant;
-import com.agamiit.entity.ContactEntity;
+import com.agamiit.entity.Contact;
 import com.agamiit.propes.AppProperties;
 import com.agamiit.services.ContactServiceImpl;
 
@@ -28,7 +28,7 @@ public class ContactRestcontroller {
 	private AppProperties appPropes;
 
 	@PostMapping(value = "/contact")
-	public String SaveContact(@RequestBody ContactEntity contactEntity) {
+	public String SaveContact(@RequestBody Contact contactEntity) {
 		Boolean status = contactServiceImpl.saveContact(contactEntity);
  
 		Map<String ,String> messages=appPropes.getMessages();
@@ -39,13 +39,13 @@ public class ContactRestcontroller {
 	}
 
 	@GetMapping(value = "/contacts")
-	public List<ContactEntity> getAllContact() {
+	public List<Contact> getAllContact() {
 
 		return contactServiceImpl.getAllContactId();
 	}
 
 	@GetMapping(value = "/contact/{cid}")
-	public ContactEntity ContactByContactId(@PathVariable("cid") Integer ContactId) {
+	public Contact ContactByContactId(@PathVariable("cid") Integer ContactId) {
 		return contactServiceImpl.getContactById(ContactId);
 
 	}

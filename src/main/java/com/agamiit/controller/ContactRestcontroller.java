@@ -20,14 +20,14 @@ import com.agamiit.propes.AppProperties;
 import com.agamiit.services.ContactServiceImpl;
 
 @RestController
-@RequestMapping(value = "/contact")
+//@RequestMapping(value = "/contact")
 public class ContactRestcontroller {
 	@Autowired
 	private ContactServiceImpl contactServiceImpl;
 	@Autowired
 	private AppProperties appPropes;
 
-	@PostMapping(value = "/addContact")
+	@PostMapping(value = "/contact")
 	public String SaveContact(@RequestBody ContactEntity contactEntity) {
 		Boolean status = contactServiceImpl.saveContact(contactEntity);
  

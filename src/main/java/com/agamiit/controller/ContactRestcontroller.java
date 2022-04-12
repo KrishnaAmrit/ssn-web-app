@@ -50,7 +50,7 @@ public class ContactRestcontroller {
 
 	}
 
-	@DeleteMapping(value = "/deleteContact/{cid}")
+	@DeleteMapping(value = "/contact/{cid}")
 	public String deleteContact(@PathVariable("cid") Integer contactId) {
 		boolean status = contactServiceImpl.deleteContactById(contactId);
 		Map<String ,String> messages=appPropes.getMessages();
